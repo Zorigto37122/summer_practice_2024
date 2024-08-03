@@ -7,7 +7,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: rgb(246,246,246);
 }
 header {
     text-align: center;
@@ -56,4 +56,9 @@ nav ul li a {
 }
 .center {
     align-self: center;
+}
+.item-price {
+    color: rgb(47, 226, 92);
+    font-size: x-large;
+    font-weight: bold;
 }

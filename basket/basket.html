@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница интернет-магазина</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main_page.css"/>
+    <link rel="stylesheet" href="../css/basket.css"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-primary bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="../icons/logo.png" width="50" height="50" alt="">
+            </a>
+
+            <a class="navbar-brand" href="#">OZON</a>
+
+            <form class="form-inline mr-auto">
+                <input class="form-control mr-sm-2" type="search" placeholder="Найти" aria-label="Search">
+                <button class="btn btn-info my-1 my-sm-0" type="submit">Найти</button>
+            </form>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../personal_info/personal_info.html">Личный кабинет</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../orders/orders.html">Заказы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../favorite/favorite.html">Избранное</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">Корзина</a></li>
+                </ul>                
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h1 class="head1">Корзина</h1>
+
+        <div>
+            <div>
+                <div class="d-flex elem rounded py-2 px-2">
+                    <input type="checkbox" aria-label="Checkbox for all items to include" class="ml-2 my-1">
+                    <span class="mx-2 my-1">Выбрать все</span>
+                    <button type="button" class="btn btn-danger btn-sm ml-auto">Удалить выбранные</button>
+                </div>
+                <p></p>
+                <div class="flex-container elem buy-item rounded py-3 px-2">
+                    <div class="flex-child m-2">
+                        <input type="checkbox" aria-label="Checkbox for item" class="ml-2 my-1">
+                        <img src="../images/prod3.webp" alt="prod3" class="rounded m-2" width="50%" height="50%">
+                    </div>                    
+                    <div class="flex-child item-info m-2">
+                        <h4>Item name</h4>
+                        <p>Item info</p>
+                    </div>
+                    <div class="flex-child m-2">
+                        <span class="item-price">1000 ₽</span>
+                    </div>
+                    <div class="flex-child input-group mb-3">
+                        <div class="input-group-prepend">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">-</button>
+                        </div>
+                        <input type="text" class="form-control" placeholder="1" aria-label="orders number input" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- js -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

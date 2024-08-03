@@ -1,0 +1,24 @@
+h1 {
+    margin: 2% 1%;
+}
+span {
+    font-size: medium;
+}
+.elem {
+    background-color: white;
+}
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    height: min-content;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+}
+.order-number-input {
+    size: 1;
+}
