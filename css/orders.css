@@ -1,0 +1,33 @@
+h1 {
+    margin: 20px 2px;
+}
+p {
+    margin-bottom: 2px;
+}
+.order-h {
+    font-size: large;
+}
+.card {
+    margin-bottom: 10px;
+}
+.item-price {
+    font-weight: bolder;
+    color: rgb(33, 37, 41);
+    font-size: 25px;
+}
+.btn-link {
+    color: rgb(56, 59, 61);
+}
+.btn-link:link {
+    text-decoration: none;
+}
+.btn-link:hover {
+    color: rgb(75, 78, 80);
+    text-decoration: none;
+}
+.btn-link:active {
+    text-decoration: none;
+}
+.btn-link:visited { 
+    text-decoration: none; 
+} 

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница интернет-магазина</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main_page.css"/>
+    <link rel="stylesheet" href="../css/main_page.css"/>
+    <link rel="stylesheet" href="../css/personal_info.css"/>
 </head>
 <body>
     <header>
@@ -33,7 +34,45 @@
         </nav>
     </header>
     <div class="container">
-        
+        <h2 class="mb-4">Личный кабинет</h2>
+        <div class="d-flex elem p-3">
+            <h4 style="display: block;">Аватар</h4>
+            <div class="m-auto" style="text-align: center;">
+                <img src="../images/ava.png" class="ava">
+                <div class="m-2">
+                    <button class="btn btn-outline-secondary btn-sm">Изменить</button>
+                    <button class="btn btn-danger btn-sm">Удалить</button>
+                </div>
+            </div>
+        </div> 
+        <form class="my-3 p-3 elem">
+            <h4 class="mb-4">Личные данные</h4>
+            <div class="form-group">
+              <label>Никнейм</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="nick" value="user123456">
+            </div>
+            <div class="form-group">
+              <label>Фамилия</label>
+              <input type="text" class="form-control" id="FirstName" placeholder="Фамилия">
+            </div>
+            <div class="form-group">
+              <label>Имя</label>
+              <input type="text" class="form-control" id="LastName" placeholder="Имя">
+            </div>
+            <div class="form-group">
+              <label>Отчество</label>
+              <input type="text" class="form-control" id="ThirdName" placeholder="Отчество">
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" class="form-control" id="email" value="ivanov123@mail.ru">
+            </div>
+            <div class="form-group">
+              <label>Дата рождения</label>
+              <input type="date" class="form-control" id="dateOfBirth" value="1999-02-12">
+            </div>
+            <button type="submit" class="btn btn-primary my-4">Сохранить</button>
+          </form>
     </div>
 
     <!-- js -->

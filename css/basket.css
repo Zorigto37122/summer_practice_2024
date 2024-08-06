@@ -1,24 +1,29 @@
 h1 {
     margin: 2% 1%;
 }
+h4 {
+    color: #001A34;
+    font-size: larger;
+}
 span {
     font-size: medium;
 }
-.elem {
-    background-color: white;
-}
-.flex-container {
-    display: flex;
-}
-
-.flex-child {
-    flex: 1;
-    height: min-content;
-}  
 
 .flex-child:first-child {
     margin-right: 20px;
 }
 .order-number-input {
     size: 1;
+    text-align: center;
+}
+.item-price {
+    color: rgba(64, 206, 88, 0.979);
+    font-family: "Arial Black";
+    font-size: 20px;
+}
+.old-price {
+    font-family: "Helvetica";
+    font-size: 18px;
+    color: rgb(128,141,154);
+    text-decoration: line-through;
 }
