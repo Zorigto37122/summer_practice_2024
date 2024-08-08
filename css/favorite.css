@@ -1,0 +1,32 @@
+.card {
+    margin: 1%;
+    width: 18rem;
+    border-radius: 10px;
+}
+.card-btn {
+    width: 100%;
+}
+.card-img-top {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+}
+.item-price {
+    color: rgba(64, 206, 88, 0.979);
+    font-family: "Helvetica";
+    font-size: 20px;
+}
+.old-price {
+    font-family: "Helvetica";
+    font-size: 18px;
+    color: rgb(128,141,154);
+    text-decoration: line-through;
+}
+.rates {
+    font-family: 'Segoe UI', sans-serif;
+    color: rgb(128,141,154);
+    font-size: 17px;
+}
+.rating {
+    font-family: "Helvetica";
+    font-size: 17px;
+}

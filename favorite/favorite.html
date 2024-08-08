@@ -3,37 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная страница интернет-магазина</title>
+    <title>Избранное</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main_page.css"/>
+    <link rel="stylesheet" href="../css/main_page.css"/>
+    <link rel="stylesheet" href="../css/favorite.css"/>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-primary bg-dark">
-            <a class="navbar-brand" href="#">
-                <img src="../icons/logo.png" width="50" height="50" alt="">
-            </a>
-
-            <a class="navbar-brand" href="#">OZON</a>
-
-            <form class="form-inline mr-auto">
-                <input class="form-control mr-sm-2" type="search" placeholder="Найти" aria-label="Search">
-                <button class="btn btn-info my-1 my-sm-0" type="submit">Найти</button>
-            </form>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../personal_info/personal_info.html">Личный кабинет</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../orders/orders.html">Заказы</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="#">Избранное</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../basket/basket.html">Корзина</a></li>
-                </ul>                
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid d-flex justify-content-between">
+              <div class="d-flex align-items-center">
+                <a class="navbar-brand" href="../index.html">
+                  <img src="../icons/logo.png" width="50" height="50" alt="">
+                </a>
+                <a class="navbar-brand align-middle mt-2" href="#">ULAN SHOP</a>
+                <div class="dropdown">
+                  <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Каталог
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <div class="flex-container">
+                      <div class="flex-child">
+                        <a class="dropdown-item" href="#">Электроника</a>
+                        <a class="dropdown-item" href="#">Одежда</a>
+                        <a class="dropdown-item" href="#">Обувь</a>
+                        <a class="dropdown-item" href="#">Дом и сад</a>
+                        <a class="dropdown-item" href="#">Детские товары</a>
+                        <a class="dropdown-item" href="#">Красота и здоровье</a>
+                        <a class="dropdown-item" href="#">Аксессуары</a>
+                      </div>
+                      <div class="flex-child">
+                        <a class="dropdown-item" href="#">Игрушки</a>
+                        <a class="dropdown-item" href="#">Мебель</a>
+                        <a class="dropdown-item" href="#">Продукты</a>
+                        <a class="dropdown-item" href="#">Бытовая техника</a>
+                        <a class="dropdown-item" href="#">Для животных</a>
+                        <a class="dropdown-item" href="#">Спорт</a>
+                        <a class="dropdown-item" href="#">Автотовары</a>                      
+                      </div>
+                      <div class="flex-child">
+                        <a class="dropdown-item" href="#">Цифровые товары</a>
+                        <a class="dropdown-item" href="#">Ювелирные изделия</a>
+                        <a class="dropdown-item" href="#">Сад и дача</a>
+                        <a class="dropdown-item" href="#">Для ремонта</a>
+                        <a class="dropdown-item" href="#">Школа</a>
+                        <a class="dropdown-item" href="#">Книги</a>
+                        <a class="dropdown-item" href="#">Канцтовары</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           
+              <div class="input-group mx-auto" id="search-bar">
+                <input class="form-control" type="search" placeholder="Найти" aria-label="Search">
+                <div class="input-group-append">
+                  <button class="btn btn-warning my-1 my-sm-0" type="submit">Найти</button>
+                </div>
+              </div>
+            
+              <div class="flex-row ml-auto" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="../index.html"><img src="../icons/home.png" class="icon"></a></li>
+                  <li class="nav-item"><a class="nav-link" href="../personal_info/personal_info.html"><img src="../icons/user.png"
+                        class="icon"></a></li>
+                  <li class="nav-item"><a class="nav-link" href="../orders/orders.html"><img src="../icons/order-history.png"
+                        class="icon"></a></li>
+                  <li class="nav-item"><a class="nav-link" href="../favorite/favorite.html"><img src="../icons/heart.png"
+                        class="icon"></a></li>
+                  <li class="nav-item"><a class="nav-link" href="../basket/basket.html"><img src="../icons/shopping-basket.png"
+                        class="icon"></a></li>
+                </ul>
+              </div>
             </div>
-        </nav>
+          </nav>
     </header>
     <div class="container">
-        
+      <h2>Избранное</h2>
+      <div class="flex-container my-4">
+        <div class="card p-2">
+          <a href="#"><img class="card-img-top" src="../images/prod13.webp" alt="Card image cap"></a>
+          <div class="card-body d-flex flex-column p-2">
+            <span class="card-item-price">2375 ₽ <span class="card-old-price">11000 ₽</span> </span>
+            <h5 class="card-title my-1 mx-sm-0">Электромопед Kugoo Kirin D1</h5>
+            <p class="card-text dscrptn mt-1 mb-0 mx-sm-0">Черный, диаметр колес 10", до 150 кг, 60 км/ч, до 70 км</p>
+            <span class="rating"><span class="rating-star">&#9733;</span> 4.5 ·<span class="rates"> 2 оценки</span> </span>
+            <a href="#" class="btn btn-warning card-btn mt-auto">В корзину</a>
+          </div>
+        </div>
+        <div class="card p-2">
+          <a href="#"><img class="card-img-top" src="../images/prod14.webp" alt="Card image cap"></a>
+          <div class="card-body d-flex flex-column p-2">
+            <span class="card-item-price">15999₽ <span class="card-old-price">19999 ₽</span> </span>
+            <h5 class="card-title my-1 mx-sm-0">Беспроводные/проводные наушники Marshall Major V</h5>
+            <p class="card-text dscrptn mt-1 mb-0 mx-sm-0">Черный, 2.0, накладные, 20 Гц - 20000 Гц</p>
+            <span class="rating"><span class="rating-star">&#9733;</span> 4.7 ·<span class="rates"> 19 оценок</span> </span>
+            <a href="#" class="btn btn-warning card-btn mt-auto">В корзину</a>
+          </div>
+        </div>            
+        <div class="card p-2">
+          <a href="#"><img class="card-img-top" src="../images/prod9.webp" alt="Card image cap"></a>
+          <div class="card-body d-flex flex-column p-2">
+            <span class="card-item-price">2062 ₽ <span class="card-old-price">3852 ₽</span> </span>
+            <h5 class="card-title my-1 mx-sm-0">Перчатки боксерские Excalibur 8046</h5>
+            <p class="card-text dscrptn mt-1 mb-0 mx-sm-0">01 Black/White PU</p>
+            <span class="rating"><span class="rating-star">&#9733;</span> 4.7 ·<span class="rates"> 12301 оценка</span> </span>
+            <a href="#" class="btn btn-warning card-btn mt-auto">В корзину</a>
+          </div>
+        </div>
+        <div class="card p-2">
+          <a href="#"><img class="card-img-top" src="../images/prod10.webp" alt="Card image cap"></a>
+          <div class="card-body d-flex flex-column p-2">
+            <span class="card-item-price">399 ₽ <span class="card-old-price">578 ₽</span> </span>
+            <h5 class="card-title my-1 mx-sm-0">Англо-бурская война 1899-1902</h5>
+            <p class="card-text dscrptn mt-1 mb-0 mx-sm-0">Дойл Артур Конан</p>
+            <span class="rating"><span class="rating-star">&#9733;</span> 4.9 ·<span class="rates"> 88 оценок</span> </span>
+            <a href="#" class="btn btn-warning card-btn mt-auto">В корзину</a>
+          </div>
+        </div>
+      </div>
+      
     </div>
 
     <!-- js -->

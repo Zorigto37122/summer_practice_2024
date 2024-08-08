@@ -9,31 +9,76 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-primary bg-dark">
-            <a class="navbar-brand" href="#">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+              <a class="navbar-brand" href="#">
                 <img src="icons/logo.png" width="50" height="50" alt="">
-            </a>
-
-            <a class="navbar-brand" href="#">OZON</a>
-
-            <form class="form-inline mr-auto">
-                <input class="form-control mr-sm-2" type="search" placeholder="Найти" aria-label="Search">
-                <button class="btn btn-info my-1 my-sm-0" type="submit">Найти</button>
-            </form>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a class="nav-link" href="#">Главная</a></li>
-                    <li class="nav-item"><a class="nav-link" href="personal_info/personal_info.html">Личный кабинет</a></li>
-                    <li class="nav-item"><a class="nav-link" href="orders/orders.html">Заказы</a></li>
-                    <li class="nav-item"><a class="nav-link" href="favorite/favorite.html">Избранное</a></li>
-                    <li class="nav-item"><a class="nav-link" href="basket/basket.html">Корзина</a></li>
-                </ul>                
+              </a>
+              <a class="navbar-brand align-middle mt-2" href="#">ULAN SHOP</a>
+              <div class="dropdown">
+                <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Каталог
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <div class="flex-container">
+                    <div class="flex-child">
+                      <a class="dropdown-item" href="#">Электроника</a>
+                      <a class="dropdown-item" href="#">Одежда</a>
+                      <a class="dropdown-item" href="#">Обувь</a>
+                      <a class="dropdown-item" href="#">Дом и сад</a>
+                      <a class="dropdown-item" href="#">Детские товары</a>
+                      <a class="dropdown-item" href="#">Красота и здоровье</a>
+                      <a class="dropdown-item" href="#">Аксессуары</a>
+                    </div>
+                    <div class="flex-child">
+                      <a class="dropdown-item" href="#">Игрушки</a>
+                      <a class="dropdown-item" href="#">Мебель</a>
+                      <a class="dropdown-item" href="#">Продукты</a>
+                      <a class="dropdown-item" href="#">Бытовая техника</a>
+                      <a class="dropdown-item" href="#">Для животных</a>
+                      <a class="dropdown-item" href="#">Спорт</a>
+                      <a class="dropdown-item" href="#">Автотовары</a>                      
+                    </div>
+                    <div class="flex-child">
+                      <a class="dropdown-item" href="#">Цифровые товары</a>
+                      <a class="dropdown-item" href="#">Ювелирные изделия</a>
+                      <a class="dropdown-item" href="#">Сад и дача</a>
+                      <a class="dropdown-item" href="#">Для ремонта</a>
+                      <a class="dropdown-item" href="#">Школа</a>
+                      <a class="dropdown-item" href="#">Книги</a>
+                      <a class="dropdown-item" href="#">Канцтовары</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+         
+            <div class="input-group mx-auto" id="search-bar">
+              <input class="form-control" type="search" placeholder="Найти" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-warning my-1 my-sm-0" type="submit">Найти</button>
+              </div>
+            </div>
+          
+            <div class="flex-row ml-auto" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="#"><img src="icons/home.png" class="icon"></a></li>
+                <li class="nav-item"><a class="nav-link" href="personal_info/personal_info.html"><img src="icons/user.png"
+                      class="icon"></a></li>
+                <li class="nav-item"><a class="nav-link" href="orders/orders.html"><img src="icons/order-history.png"
+                      class="icon"></a></li>
+                <li class="nav-item"><a class="nav-link" href="favorite/favorite.html"><img src="icons/heart.png"
+                      class="icon"></a></li>
+                <li class="nav-item"><a class="nav-link" href="basket/basket.html"><img src="icons/shopping-basket.png"
+                      class="icon"></a></li>
+              </ul>
+            </div>
+          </div>
         </nav>
     </header>
-    <div class="container">      
-      <h2>Популярные товары</h2>
+    <div class="container elem">      
+      <h1 class="mb-4">Популярные товары</h1>
         <div id="carouselExampleIndicators" class="carousel slide rounded" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -42,23 +87,40 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
+                <div class="d-flex flex-container">
+                  <div class="flex-child" style="flex-grow: 5;">
+                      <a href="#"><img class="d-block w-100" src="images/prod5.webp" alt="Second slide"></a>
+                  </div>
+                  <div class="flex-child crsl-right ml-sm-2" style="flex-grow: 3;">
+                      <span class="m-2 my-4 discount">СКИДКА <span class="item-price">-40%</span></span>
+                      <p class="prod-dscrptn m-2"> WOODSTEEL Письменный стол, 90х50х75 см </p>
+                      <p class="item-price m-2">2659 ₽ <span class="old-price m-2">4999 ₽</span></p>
+                  </div>
+              </div>
+              </div>
+              <div class="carousel-item">
                 <div class="flex-container">
                     <div class="flex-child" style="flex-grow: 5;">
-                        <a href="#"><img class="d-block w-100" src="images/prod1.webp" alt="First slide"></a>
+                        <a href="#"><img class="d-block w-100 h-70" src="images/prod3.webp" alt="First slide"></a>
                     </div>
-                    <div class="flex-child crsl-right" style="flex-grow: 3;">
+                    <div class="flex-child crsl-right ml-sm-2" style="flex-grow: 3;">
                         <span class="m-2 my-4 discount">СКИДКА <span class="item-price">-50%</span></span>
                         <p class="prod-dscrptn m-2">Защитное стекло для Xiaomi Redmi 9</p>
-                        <p class="item-price m-2">119 ₽</p>
-                        <p class="old-price m-2">234 ₽</p>
+                        <p class="item-price m-2">119 ₽ <span class="old-price m-2">234 ₽</span></p>
                     </div>
                 </div>
               </div>
               <div class="carousel-item">
-                <a href="#"><img class="d-block w-100" src="images/prod2.webp" alt="Second slide"></a>
+                <div class="d-flex flex-container">
+                  <div class="flex-child" style="flex-grow: 5;">
+                      <a href="#"><img class="d-block w-100" src="images/prod4.webp" alt="Third slide"></a>
+                  </div>
+                  <div class="flex-child crsl-right ml-sm-2 " style="flex-grow: 3;">
+                      <span class="m-2 my-4 discount">СКИДКА <span class="item-price">-60%</span></span>
+                      <p class="prod-dscrptn m-2">Кабель USB C / GQbox / Провод Type C - Type C / 3 метра / 60W / Плетеный кабель iPhone 15</p>
+                      <p class="item-price m-2">99 ₽ <span class="old-price m-2">213 ₽</span></p>
+                  </div>
               </div>
-              <div class="carousel-item">
-                <a href="#"><img class="d-block w-100" src="images/prod3.webp" alt="Third slide"></a>
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -71,25 +133,90 @@
             </a>
           </div>
         
-        <h1></h1>
-        <div class="product">
-            <img src="images/prod1.webp" alt="Товар 1">
-            <h3>Товар 1</h3>
-            <p>Описание товара 1</p>
-            <p>Цена: 1000 руб.</p>
-        </div>
-        <div class="product">
-            <img src="images/prod2.webp" alt="Товар 2">
-            <h3>Товар 2</h3>
-            <p>Описание товара 2</p>
-            <p>Цена: 2000 руб.</p>
-        </div>
-        <div class="product">
-            <img src="product3.jpg" alt="Товар 3">
-            <h3>Товар 3</h3>
-            <p>Описание товара 3</p>
-            <p>Цена: 3000 руб.</p>
-        </div>
+          <div class="flex-container my-4">
+            <div class="card p-2">
+              <a href="#"><img class="card-img-top" src="images/prod13.webp" alt="Card image cap"></a>
+              <div class="card-body d-flex flex-column p-2">
+                <span class="card-item-price">2375 ₽ <span class="card-old-price">11000 ₽</span> </span>
+                <h5 class="card-title my-1 mx-sm-0">Электромопед Kugoo Kirin D1</h5>
+                <p class="card-text dscrptn mt-1 mb-0 mx-sm-0">Черный, диаметр колес 10", до 150 кг, 60 км/ч, 31200 мА*ч, до 70 км</p>
+                <span class="rating"><span class="rating-star">&#9733;</span> 4.5 ·<span class="rates"> 2 оценки</span> </span>
+                <a href="#" class="btn btn-warning card-btn mt-auto">В корзину</a>
+              </div>
+            </div>
+            <div class="card p-2">
+              <a href="#"><img class="card-img-top" src="images/prod14.webp" alt="Card image cap"></a>
+              <div class="card-body d-flex flex-column p-2">
+                <span class="card-item-price">15999₽ <span class="card-old-price">19999 ₽</span> </span>
+                <h5 class="card-title my-1 mx-sm-0">Беспроводные/проводные наушники Marshall Major V</h5>
+                <p class="card-text dscrptn mt-1 mb-0 mx-sm-0">Черный, 2.0, накладные, 20 Гц - 20000 Гц, 32Ω, Bluetooth, проводной, 5.3, беспроводная зарядка</p>
+                <span class="rating"><span class="rating-star">&#9733;</span> 4.7 ·<span class="rates"> 19 оценок</span> </span>
+                <a href="#" class="btn btn-warning card-btn mt-auto">В корзину</a>
+              </div>
+            </div>            
+            <div class="card p-2">
+              <a href="#"><img class="card-img-top" src="images/prod9.webp" alt="Card image cap"></a>
+              <div class="card-body d-flex flex-column p-2">
+                <span class="card-item-price">2062 ₽ <span class="card-old-price">3852 ₽</span> </span>
+                <h5 class="card-title my-1 mx-sm-0">Перчатки боксерские Excalibur 8046</h5>
+                <p class="card-text dscrptn mt-1 mb-0 mx-sm-0">01 Black/White PU</p>
+                <span class="rating"><span class="rating-star">&#9733;</span> 4.7 ·<span class="rates"> 12301 оценка</span> </span>
+                <a href="#" class="btn btn-warning card-btn mt-auto">В корзину</a>
+              </div>
+            </div>
+            <div class="card p-2">
+              <a href="#"><img class="card-img-top" src="images/prod10.webp" alt="Card image cap"></a>
+              <div class="card-body d-flex flex-column p-2">
+                <span class="card-item-price">399 ₽ <span class="card-old-price">578 ₽</span> </span>
+                <h5 class="card-title my-1 mx-sm-0">Англо-бурская война 1899-1902</h5>
+                <p class="card-text dscrptn mt-1 mb-0 mx-sm-0">Дойл Артур Конан</p>
+                <span class="rating"><span class="rating-star">&#9733;</span> 4.9 ·<span class="rates"> 88 оценок</span> </span>
+                <a href="#" class="btn btn-warning card-btn mt-auto">В корзину</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex-container">            
+            <div class="card p-2">
+              <a href="#"><img class="card-img-top" src="images/prod11.webp" alt="Card image cap"></a>
+              <div class="card-body d-flex flex-column p-2">
+                <span class="card-item-price">2375 ₽ <span class="card-old-price">11000 ₽</span> </span>
+                <h5 class="card-title my-1 mx-sm-0">Вакууматор для продуктов, вакуумный упаковщик для продуктов</h5>
+                <p class="card-text dscrptn mt-1 mb-0 mx-sm-0">Черный</p>
+                <span class="rating"><span class="rating-star">&#9733;</span> 4.8 ·<span class="rates"> 42 оценки</span> </span>
+                <a href="#" class="btn btn-warning card-btn mt-auto">В корзину</a>
+              </div>
+            </div>
+            <div class="card p-2">
+              <a href="#"><img class="card-img-top" src="images/prod12.webp" alt="Card image cap"></a>
+              <div class="card-body d-flex flex-column p-2">
+                <span class="card-item-price">483₽ <span class="card-old-price">963 ₽</span> </span>
+                <h5 class="card-title my-1 mx-sm-0">Эспандер кистевой FORTIUS для рук</h5>
+                <p class="card-text dscrptn mt-1 mb-0 mx-sm-0">набор из 3 шт, 10 кг, 20 кг, 30 кг</p>
+                <span class="rating"><span class="rating-star">&#9733;</span> 4.8 ·<span class="rates"> 1666 оценок</span> </span>
+                <a href="#" class="btn btn-warning card-btn mt-auto">В корзину</a>
+              </div>
+            </div>
+            <div class="card p-2">
+              <a href="#"><img class="card-img-top" src="images/prod8.webp" alt="Card image cap"></a>
+              <div class="card-body d-flex flex-column p-2">
+                <span class="card-item-price">11 804 ₽ <span class="card-old-price">19990 ₽</span> </span>
+                <h5 class="card-title my-1 mx-sm-0">Смартфон C65</h5>
+                <p class="card-text dscrptn mt-1 mb-0 mx-sm-0">6/128 ГБ, черный</p>
+                <span class="rating"><span class="rating-star">&#9733;</span> 4.9 ·<span class="rates"> 169 оценок</span> </span>
+                <a href="#" class="btn btn-warning card-btn mt-auto">В корзину</a>
+              </div>
+            </div>
+            <div class="card p-2">
+              <a href="#"><img class="card-img-top" src="images/prod7.webp" alt="Card image cap"></a>
+              <div class="card-body d-flex flex-column  p-2">
+                <span class="card-item-price">24123 ₽ <span class="card-old-price">31738 ₽</span> </span>
+                <h5 class="card-title my-1 mx-sm-0">Экшн-камера Aceline S-105</h5>
+                <p class="card-text dscrptn mt-1 mb-0 mx-sm-0">Черный, 12 Мп, 3840x2160 60 кадр./сек</p>
+                <span class="rating"><span class="rating-star">&#9733;</span> 4.7 ·<span class="rates"> 12301 оценка</span> </span>
+                <a href="#" class="btn btn-warning card-btn mt-auto">В корзину</a>
+              </div>
+            </div>
+          </div>
     </div>
 
     <!-- js -->

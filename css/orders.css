@@ -9,6 +9,7 @@ p {
 }
 .card {
     margin-bottom: 10px;
+    width: 100%;
 }
 .item-price {
     font-weight: bolder;
