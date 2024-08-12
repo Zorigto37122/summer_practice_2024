@@ -4,15 +4,8 @@
 }
 .navbar {
     background-color: white;
-    box-shadow: 1px 1px 10px rgb(119, 119, 119);
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
     padding: 2px 8px;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(246,246,246);
 }
 header {
     text-align: center;
@@ -31,6 +24,7 @@ nav ul li a {
 }
 .container {
     padding: 10px;
+    min-height: 1000px;
 }
 .product {
     background-color: #fff;
@@ -112,9 +106,11 @@ h1 {
 }
 .carousel-inner {
     background-color: whitesmoke;
-    border-radius: 8px;
-    box-shadow: 1px 1px 5px black;
-}
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #000000;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.507);
+}   
 .crsl-right {
     height: 100%;
 }
@@ -175,4 +171,34 @@ h1 {
     font-family: "Helvetica";
     font-size: 17px;
 }
-
+.footer {
+    background-color: #333333;
+}
+.footer-container {
+    width: 70%;
+    margin: 10px auto;
+}
+.col-head {
+    color: #fff;
+    font-family: "Helvetica";
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 17px;
+}
+.col-p {
+    color: #c4c4c4;
+    font-family: "Helvetica";
+    font-size: 15px;
+    margin: 8px 2px;
+}
+.ftr-col {
+    margin: 8px 6px;
+}
+.social-icon {
+    margin: 20px 8px;
+    width: 26px;
+    aspect-ratio: 1 / 1;
+}
+#qr-code {
+    text-align: center;
+}
